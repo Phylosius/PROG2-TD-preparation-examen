@@ -22,7 +22,7 @@ public abstract class Personne {
 
     public int getAge() {
         LocalDate currentDate = LocalDate.now();
-        return dateNaissance.getYear() - currentDate.getYear();
+        return currentDate.getYear() - dateNaissance.getYear();
     }
 
     public String getNom() {
